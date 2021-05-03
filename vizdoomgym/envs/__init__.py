@@ -6,6 +6,7 @@ from vizdoomgym.envs.vizdoom_env_definitions import (
     VizdoomDefendLine,
     VizdoomHealthGathering,
     VizdoomMyWayHome,
+    VizdoomMyWayHomeSparse,
     VizdoomPredictPosition,
     VizdoomTakeCover,
     VizdoomDeathmatch,

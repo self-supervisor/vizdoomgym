@@ -19,6 +19,7 @@ CONFIGS = [
     ["defend_the_line.cfg", 3],  # 3
     ["health_gathering.cfg", 3],  # 4
     ["my_way_home.cfg", 5],  # 5
+    ["my_way_home_sparse.cfg", 5],  # 5
     ["predict_position.cfg", 3],  # 6
     ["take_cover.cfg", 2],  # 7
     ["deathmatch.cfg", 20],  # 8
