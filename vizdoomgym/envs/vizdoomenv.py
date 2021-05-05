@@ -19,11 +19,11 @@ CONFIGS = [
     ["defend_the_line.cfg", 3],  # 3
     ["health_gathering.cfg", 3],  # 4
     ["my_way_home.cfg", 5],  # 5
-    ["my_way_home_sparse.cfg", 5],  # 5
-    ["predict_position.cfg", 3],  # 6
-    ["take_cover.cfg", 2],  # 7
-    ["deathmatch.cfg", 20],  # 8
-    ["health_gathering_supreme.cfg", 3],  # 9
+    ["my_way_home_sparse.cfg", 5],  # 6
+    ["predict_position.cfg", 3],  # 7
+    ["take_cover.cfg", 2],  # 8
+    ["deathmatch.cfg", 20],  # 9
+    ["health_gathering_supreme.cfg", 3],  # 10
 ]
 
 
@@ -47,7 +47,7 @@ class VizdoomEnv(gym.Env):
 
         # init game
         self.game = vzd.DoomGame()
-        self.game.set_screen_resolution(vzd.ScreenResolution.RES_160X120)
+        self.game.set_screen_resolution(vzd.ScreenResolution.RES_640X480)
         scenarios_dir = os.path.join(os.path.dirname(__file__), "scenarios")
         self.game.load_config(os.path.join(scenarios_dir, CONFIGS[level][0]))
         self.game.set_window_visible(False)

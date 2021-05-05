@@ -43,7 +43,7 @@ class VizdoomMyWayHome(VizdoomEnv):
 
 class VizdoomMyWayHomeSparse(VizdoomEnv):
     def __init__(self, **kwargs):
-        super(VizdoomMyWayHomeSparse, self).__init__(5, **kwargs)
+        super(VizdoomMyWayHomeSparse, self).__init__(6, **kwargs)
 
 
 class VizdoomPredictPosition(VizdoomEnv):
